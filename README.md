@@ -30,8 +30,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://delightful-lamington-a3efbd.netlify.app/)
+- Solution URL: [Solution URL](https://your-solution-url.com)
+- Live Site URL: [Live site URL](https://github.com/adebimpecole/intro-section-with-dropdown-navigation.git)
 
 ## My process
 
