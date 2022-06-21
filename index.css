@@ -1,0 +1,362 @@
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+html{
+    height: 100%;
+    width: 100%;
+}
+body{
+    font-family: 'Epilogue', sans-serif;
+    background-color: hsl(0, 0%, 98%);
+}
+main{
+    display: flex;
+}
+.main{
+    display: flex;
+    column-gap: 150px;
+    height: fit-content;
+    width: 100%;
+    height: 600px;
+    justify-content: center;
+    flex-direction: row;
+    align-items: center;
+}
+/* nav bar */
+ul{
+    display: flex;
+    flex-direction: row;
+    list-style-type: none;
+    column-gap: 20px;
+    font-size: 12px;
+    font-weight: bold;
+    color: hsl(0, 0%, 41%);
+    padding: 0;
+    justify-content: space-between;
+    align-items: center;
+}
+.content{
+    display: none;
+    position: absolute;
+    background-color: white;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    flex-direction: column;
+    row-gap: 20px;
+    padding: 1%;
+    border-radius: 5px;
+}
+.drpdwn:hover .content{
+    display: flex;
+    justify-content: space-evenly;
+}
+.content a{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+
+}
+nav{
+    display: flex;
+    flex-direction: row;
+    margin: 1% 2%;
+    column-gap: 2%;
+    align-items: flex-start;
+}
+.login{
+    text-decoration: none;
+    color: hsl(0, 0%, 41%);
+}
+.login:hover{
+    color: hsl(0, 0%, 8%);
+}
+.navtxt{
+    cursor: pointer;
+}
+.navtxt:hover{
+    color: hsl(0, 0%, 8%);
+}
+.midnav{
+    width: 100%;
+}
+.drp, .bars, .close{
+    display: none;
+}
+/* .drpdwn1{
+    position: relative;
+    display: inline-block;
+}
+
+.side{
+    width: 100%;
+} */
+/* images */
+.logo{
+    width: 6%;
+    height: 6%;
+    padding-top: 1%;
+}
+/* main1 */
+h1{
+    font-size: 4.5em;
+    font-weight: bolder;
+    color: hsl(0, 0%, 8%);
+}
+.text{
+    font-size: 15px;
+    color: hsl(0, 0%, 41%);
+    padding: 2% 15% 0 0;
+}
+.main1{
+    display: flex;
+    flex-direction: column;
+    row-gap: 12%;
+    width: 31%;
+}
+.pics{
+    display: flex;
+    flex-direction: row;
+    column-gap: 5%;
+    padding-top: 20%;
+    justify-content: center;
+}
+.pic{
+    width: 18%;
+    height: 18%;
+}
+/* main 2 */
+.main2{
+    width: 33%;
+    height: 100%;
+    background: url("images/image-hero-desktop.png") no-repeat;
+    background-size: 100% 100%;
+
+}
+/* buttons */
+button{
+    font-weight: bold;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.learn{
+    color: hsl(0, 0%, 98%);
+    border-color: hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 8%);
+    width: 25%;
+    height: 100%;
+    margin-top: 10%;
+    padding: 3% 4%;
+}
+.register{
+    width: 80px;
+    font-size: 12px;
+    height: 35px;
+    background-color: hsl(0, 0%, 98%);
+    color: hsl(0, 0%, 41%);
+    border-color: hsl(0, 0%, 41%);
+    outline: none;
+}
+.register:hover{
+    color: black;
+    border-color: black;
+}
+.learn:hover{
+    color: hsl(0, 0%, 8%);
+    background-color: hsl(0, 0%, 98%);
+}
+@media only screen and (max-width: 480px){
+    .main{
+        display: flex;
+        column-gap: 150px;
+        width: 100%;
+        height: 500px;
+        /* padding-top: 50px; */
+        align-items: center;
+        justify-content: center;
+        flex-direction: column-reverse;
+    }
+    /* nav bar */
+    nav{
+        display: flex;
+        flex-direction: row;
+        margin: 2% 2% 4% 2%;
+        justify-content: space-between;
+        align-items: center;
+    }
+    ul{
+        display: flex;
+        flex-direction: column;
+        list-style-type: none;
+        font-size: 14px;
+        font-weight: normal;
+        row-gap: 15px;
+        padding-left: 0;
+        justify-content: flex-start;
+        width: 100%;
+    }
+    .ul li{
+        width: 100%;
+    }
+    .rnav{
+        width: 100%;
+        color: hsl(0, 0%, 41%);
+        padding: 0;
+    }
+    .rnav ul{
+        align-items: center;
+    }
+    .rnav ul li{
+        width: 100%;
+    }
+    .lnav{
+        row-gap: 15px;
+        color: hsl(0, 0%, 41%);
+        align-items: flex-start;
+        /* padding-left: 42%; */
+        width: 100%;
+        align-items: center;
+    }
+    .lnav ul{
+        row-gap: 25px;
+    }
+    .content{
+        display: none;
+        background-color: hsl(0, 0%, 98%);
+        position: relative;
+        box-shadow: none;
+        z-index: 1;
+        flex-direction: column;
+        row-gap: 20px;
+        padding: 25% 0 15% 11%;
+        border-radius: 5px;
+    }
+    .closebtn{
+        padding-left: 90%;
+        padding-top: 10%;
+        width: 10%;
+    }
+    
+    .content a{
+        text-decoration: none;
+        color: hsl(0, 0%, 41%);
+        display: flex;
+        flex-direction: row;
+        column-gap: 10px;
+    }
+    .drpdwn:hover .content{
+        display: flex;
+        justify-content: space-evenly;
+    }
+    .drpdwn{
+        position: relative;
+        display: inline-block;
+    }
+    .midnav {
+        position: fixed;
+        top: 0;
+        right: -270px;
+        height: 100%;
+        background-color: hsl(0, 0%, 98%);
+        width: 30%;
+        z-index: 2;
+        margin: 0;
+        padding: 4% 5%;
+        justify-content: flex-start;
+        row-gap: 35px;
+        font-weight: normal;
+        
+    }
+    .bars, .drp{
+        display: block;
+    }
+    .bars{
+        width: 70%;
+    }
+    .close, .exit{
+        width: 100%;
+    }
+    .exit{
+       padding-left: 90%;
+    }
+    .cls{
+        width: 13%;
+
+    }
+    .rnav ul .navtxt{
+        text-align: center;
+    }
+
+    /* 
+    
+    
+    
+    
+    
+    
+    */
+    /* images */
+    .logo{
+        width: 15%;
+    }
+    /* main1 */
+    h1{
+        font-size: 2.7em;
+        font-weight: bolder;
+        color: hsl(0, 0%, 8%);
+        margin-bottom: 0;
+    }
+    .text{
+        font-size: 13px;
+        color: hsl(0, 0%, 41%);
+        padding: 0;
+    }
+    .main1{
+        display: flex;
+        flex-direction: column;
+        row-gap: 5%;
+        width: 100%;
+        height: 50%;
+        align-items: center;
+        padding-top: 2%;
+        text-align: center;
+    }
+    .pics{
+        padding-top: 4%;
+        width: 100%;
+    }
+    .pic{
+        width: 15%;
+        height: 35%;
+    }
+    /* main 2 */
+    .main2{
+        width: 100%;
+        height: 100%;
+        background: url("images/image-hero-mobile.png") no-repeat;
+        background-size: 100% 100%;
+    
+    }
+    /* buttons */
+    .learn{
+        width: 30%;
+        height: 100%;
+        margin-top: 2%;
+        padding: 3% 4%;
+    }
+    .register{
+        width: 100%;
+        font-size: 13px;
+        font-weight: normal;
+        height: 35px;
+        outline: none;
+    }
+    .register:hover{
+        color: black;
+        border-color: black;
+    }
+    .learn:hover{
+        color: hsl(0, 0%, 8%);
+        background-color: hsl(0, 0%, 98%);
+    }
+}
